@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>combine-array</title>
+</head>
+<body>
+    <script>
+        'use strict';
+
+        //////////////////////////////////////
+        const combineArray = (arr) => {
+            if(Array.isArray(arr)) {
+                return arr.reduce((a, c) => {
+                    return a * 10 + c;
+                });
+            }
+            return null;
+        }
+        /////////////////////////////////////
+
+        let result = combineArray([1, 5, 6]);
+        console.log(result);
+        
+    </script>
+</body>
+</html>
